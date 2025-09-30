@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">💼 Invoicer</h2>
+      <nav>
+        <a href="index.html" class="active">🏠 Dashboard</a>
+        <a href="invoice-form.html">📑 Invoices</a>
+        <a href="issuers.html">🏢 Issuers</a>
+        <a href="clients.html">👥 Clients</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <input type="text" placeholder="Search invoices...">
+        <div class="user">👤 Admin</div>
+      </header>
+
+      <!-- Page Content -->
+      <section class="content">
+        <h1>Invoices</h1>
+
+        <!-- Actions -->
+        <div class="actions">
+          <button class="btn">+ New Invoice</button>
+          <select>
+            <option>Status: All</option>
+            <option>Paid</option>
+            <option>Unpaid</option>
+            <option>Overdue</option>
+          </select>
+        </div>
+
+        <!-- Table -->
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Issuer</th>
+                <th>Receiver</th>
+                <th>Date</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Total</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td>
+                <td>MyCompany</td>
+                <td>Client A</td>
+                <td>2025-09-15</td>
+                <td>2025-09-30</td>
+                <td><span class="status paid">Paid</span></td>
+                <td>$100</td>
+                <td><button class="small">View</button></td>
+              </tr>
+              <tr>
+                <td>002</td>
+                <td>MyCompany</td>
+                <td>Client B</td>
+                <td>2025-09-20</td>
+                <td>2025-10-05</td>
+                <td><span class="status unpaid">Unpaid</span></td>
+                <td>$250</td>
+                <td><button class="small">View</button></td>
+              </tr>
+              <tr>
+                <td>003</td>
+                <td>OtherCo</td>
+                <td>Client A</td>
+                <td>2025-09-22</td>
+                <td>2025-10-01</td>
+                <td><span class="status overdue">Overdue</span></td>
+                <td>$500</td>
+                <td><button class="small">View</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

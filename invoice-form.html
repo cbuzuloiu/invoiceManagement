@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Invoice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="logo">💼 Invoicer</h2>
+      <nav>
+        <a href="index.html">🏠 Dashboard</a>
+        <a href="invoice-form.html" class="active">📑 Invoices</a>
+        <a href="issuers.html">🏢 Issuers</a>
+        <a href="clients.html">👥 Clients</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <h1>Create Invoice</h1>
+        <div class="user">👤 Admin</div>
+      </header>
+
+      <!-- Invoice Form -->
+      <section class="content">
+        <form class="invoice-form">
+          <!-- Issuer & Receiver -->
+          <div class="form-row">
+            <label for="issuer">Issuer:</label>
+            <select id="issuer" name="issuer">
+              <option>Select Issuer</option>
+              <option>MyCompany</option>
+              <option>OtherCo</option>
+            </select>
+            <button type="button" class="small">+ Add Issuer</button>
+          </div>
+
+          <div class="form-row">
+            <label for="receiver">Receiver:</label>
+            <select id="receiver" name="receiver">
+              <option>Select Receiver</option>
+              <option>Client A</option>
+              <option>Client B</option>
+            </select>
+            <button type="button" class="small">+ Add Receiver</button>
+          </div>
+
+          <!-- Invoice Info -->
+          <div class="form-grid">
+            <div>
+              <label for="invoice-number">Invoice #:</label>
+              <input type="text" id="invoice-number" value="INV-2025-001">
+            </div>
+            <div>
+              <label for="date">Date:</label>
+              <input type="date" id="date" value="2025-09-30">
+            </div>
+            <div>
+              <label for="due-date">Due Date:</label>
+              <input type="date" id="due-date" value="2025-10-15">
+            </div>
+            <div>
+              <label for="terms">Payment Terms:</label>
+              <select id="terms">
+                <option>Net 15</option>
+                <option selected>Net 30</option>
+                <option>Net 60</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Line Items -->
+          <h2>Line Items</h2>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Description</th>
+                  <th>Qty</th>
+                  <th>Price</th>
+                  <th>Tax %</th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" value="Web Design"></td>
+                  <td><input type="text" value="Homepage + UI"></td>
+                  <td><input type="number" value="5"></td>
+                  <td><input type="number" value="50"></td>
+                  <td><input type="number" value="10"></td>
+                  <td>$250.00</td>
+                </tr>
+                <tr>
+                  <td colspan="6"><button type="button" class="small">+ Add Row</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Totals -->
+          <div class="totals">
+            <p>Subtotal: <span>$250.00</span></p>
+            <p>Tax: <span>$25.00</span></p>
+            <p>Discount: <input type="number" value="0"> %</p>
+            <p class="grand-total">Total: <span>$275.00</span></p>
+          </div>
+
+          <!-- Payment Details -->
+          <h2>Payment Details</h2>
+          <div class="form-row">
+            <label for="bank">Bank Account / IBAN:</label>
+            <input type="text" id="bank" placeholder="IBAN / Account #">
+          </div>
+          <div class="form-row">
+            <label for="notes">Notes:</label>
+            <textarea id="notes" rows="3" placeholder="Thank you for your business!"></textarea>
+          </div>
+
+          <!-- Actions -->
+          <div class="form-actions">
+            <button type="submit" class="btn">Save Draft</button>
+            <button type="submit" class="btn">Save & Send</button>
+            <button type="button" class="btn">Download PDF</button>
+            <button type="reset" class="small">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
