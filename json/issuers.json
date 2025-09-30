@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Building Cities Concept SRL",
+      "taxId": "RO123213",
+      "tradeRegistryId": "j2023231231",
+      "address": "Campia Libertatii",
+      "bankName": "ING Bank",
+      "bankAccount": "RO213213213",
+      "phone": "0723308802",
+      "email": "example@example.com",
+      "website": "www.website.ro"
+    },
+    {
+        "name": "Building Cities Concept SRL",
+        "taxId": "RO123213",
+        "tradeRegistryId": "j2023231231",
+        "address": "Campia Libertatii",
+        "bankName": "ING Bank",
+        "bankAccount": "RO213213213",
+        "phone": "0723308802",
+        "email": "example@example.com",
+        "website": "www.website.ro"
+    }
+]

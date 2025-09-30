@@ -74,7 +74,7 @@
               <label for="issuer-address">Address</label>
               <textarea id="issuer-address" rows="2" placeholder="Street, City, Country"></textarea>
             </div> -->
-            <button type="submit" class="btn">➕ Add Issuer</button>
+            <button type="submit" id="add_issuer_btn" class="btn">➕ Add Issuer</button>
           </form>
         </div>
 
@@ -96,7 +96,7 @@
                 <th>Actions</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="issuers_tbody">
               <tr>
                 <td>ABC Solutions SRL</td>
                 <td>RO12345678</td>
@@ -133,5 +133,6 @@
       </section>
     </main>
   </div>
+  <script src="issuers.js"></script>
 </body>
 </html>
