@@ -38,20 +38,36 @@
               <input type="text" id="client-name" placeholder="Client or Company Name" required>
             </div>
             <div class="form-group">
-              <label for="client-email">Email</label>
-              <input type="email" id="client-email" placeholder="email@example.com">
+              <label for="client-taxid">Tax ID / CUI</label>
+              <input type="text" id="client-taxid" placeholder="e.g. RO987654321">
+            </div>
+            <div class="form-group">
+              <label for="client-taxid-reg">Tax ID / Nr. Registrul Comertului</label>
+              <input type="text" id="client-taxid-reg" placeholder="e.g. YAAAAXXXXXXJJC">
+            </div>
+            <div class="form-group">
+              <label for="client-address">Address</label>
+              <textarea id="client-address" rows="2" placeholder="Street, City, Country"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="client-bank-name">Bank Name</label>
+              <input type="text" id="client-bank-name" placeholder="e.g. ING BANK Romania S.A.">
+            </div>
+            <div class="form-group">
+              <label for="client-bank-account">Bank Account</label>
+              <input type="text" id="client-bank-account" placeholder="e.g. RO66BACX0000001234567890">
             </div>
             <div class="form-group">
               <label for="client-phone">Phone</label>
               <input type="tel" id="client-phone" placeholder="+40 7xx xxx xxx">
             </div>
             <div class="form-group">
-              <label for="client-taxid">Tax ID</label>
-              <input type="text" id="client-taxid" placeholder="e.g. RO987654321">
+              <label for="client-email">Email</label>
+              <input type="email" id="client-email" placeholder="email@example.com">
             </div>
             <div class="form-group">
-              <label for="client-address">Address</label>
-              <textarea id="client-address" rows="2" placeholder="Street, City, Country"></textarea>
+              <label for="client-website">Website</label>
+              <input type="text" id="client-website" placeholder="e.g. https://www.website.ro">
             </div>
             <button type="submit" class="btn">➕ Add Client</button>
           </form>
@@ -64,31 +80,43 @@
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Tax ID</th>
+                <th>Tax ID / CUI</th>
+                <th>Tax ID / Nr. Registrul Comertului</th>
                 <th>Address</th>
+                <th>Bank Name</th>
+                <th>Bank Account</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Website</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Client A SRL</td>
-                <td>office@clienta.ro</td>
-                <td>+40 721 000 000</td>
                 <td>RO987654321</td>
+                <td>YAAAAXXXXXXJJC</td>
                 <td>Cluj-Napoca, Romania</td>
+                <td>ING BANK Romania S.A.</td>
+                <td>RO66BACX0000001234567890</td>
+                <td>+40 721 000 000</td>
+                <td>office@clienta.ro</td>
+                <td>https://clienta.ro</td>
                 <td>
                   <button class="btn small">✏️ Edit</button>
                   <button class="btn small danger">🗑️ Delete</button>
                 </td>
               </tr>
               <tr>
-                <td>Jane Doe</td>
-                <td>jane@example.com</td>
-                <td>+40 765 111 222</td>
-                <td>-</td>
+                <td>Jane Doe PFA</td>
+                <td>RO11223344</td>
+                <td>F12/3456/2020</td>
                 <td>Iasi, Romania</td>
+                <td>BT</td>
+                <td>RO49BTRL0000000000001234</td>
+                <td>+40 765 111 222</td>
+                <td>jane@example.com</td>
+                <td>https://janedoe.ro</td>
                 <td>
                   <button class="btn small">✏️ Edit</button>
                   <button class="btn small danger">🗑️ Delete</button>
