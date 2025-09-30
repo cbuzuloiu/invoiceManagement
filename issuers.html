@@ -38,21 +38,42 @@
               <input type="text" id="issuer-name" placeholder="Company or Individual Name" required>
             </div>
             <div class="form-group">
-              <label for="issuer-taxid">Tax ID</label>
+              <label for="issuer-taxid">Tax ID / CUI</label>
               <input type="text" id="issuer-taxid" placeholder="e.g. RO12345678">
+            </div>
+            <div class="form-group">
+                <label for="issuer-taxid-reg">Tax ID / Nr. Registrul Comertului</label>
+                <input type="text" id="issuer-taxid-reg" placeholder="e.g. YAAAAXXXXXXJJC">
+            </div>
+            <div class="form-group">
+                <label for="issuer-address">Address</label>
+                <textarea id="issuer-address" rows="2" placeholder="Street, City, Country"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="issuer-bank-name">Bank Name</label>
+                <input type="text" id="issuer-bank-name" placeholder="e.g. ING BANK Romania S.A.">
+            </div>
+            <div class="form-group">
+                <label for="issuer-bank-account">Bank Account</label>
+                <input type="text" id="issuer-bank-account" placeholder="e.g. RO66BACX0000001234567890">
+            </div>
+            <div class="form-group">
+                <label for="issuer-phone">Phone</label>
+                <input type="tel" id="issuer-phone" placeholder="+40 712 345 678">
             </div>
             <div class="form-group">
               <label for="issuer-email">Email</label>
               <input type="email" id="issuer-email" placeholder="Email Address">
             </div>
             <div class="form-group">
-              <label for="issuer-phone">Phone</label>
-              <input type="tel" id="issuer-phone" placeholder="+40 712 345 678">
+                <label for="issuer-website">Website</label>
+                <input type="text" id="issuer-website" placeholder="e.g. https://www.website.ro">
             </div>
-            <div class="form-group">
+            
+            <!-- <div class="form-group">
               <label for="issuer-address">Address</label>
               <textarea id="issuer-address" rows="2" placeholder="Street, City, Country"></textarea>
-            </div>
+            </div> -->
             <button type="submit" class="btn">➕ Add Issuer</button>
           </form>
         </div>
