@@ -19,6 +19,7 @@
   .dashboard {
     display: flex;
     min-height: 100vh;
+    align-items: stretch; /* ensure columns stretch to full container height */
   }
   .sidebar {
     width: 220px;
@@ -248,7 +249,7 @@
 /* Sidebar full height (works with flex layout) */
 .sidebar {
   width: 220px;
-  height: 100vh; /* full viewport height */
+  min-height: 100vh; /* at least viewport height; grows with content */
 }
 
 /* main-content inherits flex styles from unified layout */
